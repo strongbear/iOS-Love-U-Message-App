@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var loveYouBg: UIImageView!
+    @IBOutlet weak var angelBg: UIImageView!
+    @IBOutlet weak var bearBg: UIImageView!
+    @IBOutlet weak var messageText: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +25,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showTheSpecialMessage(sender: AnyObject) {
+        loveYouBg.hidden = false
+        angelBg.hidden = false
+        bearBg.hidden = false
+        messageText.hidden = true
+    }
 
 }
 
